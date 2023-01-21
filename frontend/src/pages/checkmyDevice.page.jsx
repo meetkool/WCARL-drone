@@ -39,34 +39,37 @@ const CheckmyDevicePage = () => {
       heading: "Camera Enabled",
       description: "Checking if Camera of the Phone working properly...",
       enabled: cameraStat,
+      link: "/sensors/CameraPage",
     },
     {
       heading: "Network Enabled",
       description: "Checking if Network is established...",
       enabled: true,
-      link: "/sensors/online",
+      link: "/sensors/NetworkPage",
     },
     {
       heading: "Accelerometer Enabled",
       description: "Checking if we have access to Accelerometer of the device...",
       enabled: accelerometerStat,
-      link: "/sensors/accelerometer",
+      link: "/sensors/AccelerometerPage",
     },
     {
       heading: "Storage Access Granted",
       description: "Checking if we can use the storage of phone...",
       enabled: true,
+      link: "/sensors/StoragePage",
     },
     {
       heading: "Gyroscope Enabled",
       description: "Checking the Gyroscope",
       enabled: gyroscopeStat,
-      link: "/sensors/gyroscope",
+      link: "/sensors/GyroscopePage",
     },
     {
       heading: "Proximity Sensor Enabled",
       description: "Checking the Proximity Sensor",
       enabled: false,
+      link: "/sensors/ProximityPage"
     },
   ]
   return (

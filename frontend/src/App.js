@@ -12,6 +12,30 @@ const router = createBrowserRouter([
     path: "/check-my-device",
     element: <CheckmyDevicePage />,
   },
+  {
+    path: "/sensors/camera",
+    element: <CameraPage />,
+  },
+  {
+    path: "/sensors/network",
+    element: <NetworkPage />,
+  },
+  {
+    path: "/sensors/accelerometer",
+    element: <AccelerometerPage />,
+  },
+  {
+    path: "/sensors/storage",
+    element: <StoragePage />,
+  },
+  {
+    path: "/sensors/gyroscope",
+    element: <GyroscopePage />,
+  },
+  {
+    path: "/sensors/proximity",
+    element: <ProximityPage />,
+  },
 ])
 
 const App = () => {
