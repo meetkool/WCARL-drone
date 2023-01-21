@@ -26,14 +26,12 @@
     "no-useless-escape": "off",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
-    "react/prop-types": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-var-requires": "off"
+    "react/prop-types": "off"
   },
-  "plugins": ["prettier", "simple-import-sort", "@typescript-eslint"],
+  "plugins": ["prettier", "simple-import-sort"],
   "overrides": [
     {
-      "files": ["**/*.js", "**/*.ts", "**/*.tsx", "**/*.jsx"],
+      "files": ["**/*.js", "**/*.jsx"],
       "rules": {
         "simple-import-sort/imports": [
           "error",
