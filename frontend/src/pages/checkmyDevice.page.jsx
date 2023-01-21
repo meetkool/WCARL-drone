@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
+
+import { checkSensors, checkMediaSupport } from "../utils/check-sensors"
+import { Round } from "../utils/utils"
 
 import Layout from "../components/layout/Layout.component"
 
