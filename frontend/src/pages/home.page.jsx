@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+
 import Layout from "../components/layout/Layout.component"
 
 const HomePage = () => {
@@ -29,7 +30,7 @@ const HomePage = () => {
                 drone.
               </p>
               <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                <Link href="/checkMyDevice">
+                <Link to={"/check-my-device"}>
                   <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">
                     Check my Device
                   </button>

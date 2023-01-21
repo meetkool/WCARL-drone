@@ -7,7 +7,7 @@ export function checkMediaSupport(callback) {
   }
 
   let MediaDevices = []
-  let isHTTPs = location.protocol === "https:"
+  let isHTTPs = window.location.protocol === "https:"
   let canEnumerate = false
 
   if (typeof MediaStreamTrack !== "undefined" && "getSources" in MediaStreamTrack) {
@@ -133,7 +133,7 @@ export function checkSensors() {
   let results = {}
   let gyroscope = null
   try {
-    gyroscope = new Gyroscope({ referenceFrame: "device" })
+    gyroscope = new window.Gyroscope({ referenceFrame: "device" })
     gyroscope.addEventListener("error", (event) => {
       // Handle runtime errors.
       if (event.error.name === "NotAllowedError") {
@@ -159,7 +159,7 @@ export function checkSensors() {
   // accelerometer
   let accelerometer = null
   try {
-    accelerometer = new LinearAccelerationSensor({ referenceFrame: "device" })
+    accelerometer = new window.LinearAccelerationSensor({ referenceFrame: "device" })
     accelerometer.addEventListener("error", (event) => {
       // Handle runtime errors.
       if (event.error.name === "NotAllowedError") {

@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="#">
           WCARL | Drone
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,17 +22,13 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link href="/">
-                <a className="nav-link active" aria-current="page">
-                  Home
-                </a>
+              <Link to="/" className="nav-link" aria-current="page">
+                Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/checkMyDevice">
-                <a className="nav-link" aria-current="page">
-                  Check my Device
-                </a>
+              <Link to="/check-my-device" className="nav-link" aria-current="page">
+                Check my Device
               </Link>
             </li>
           </ul>
